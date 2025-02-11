@@ -4,13 +4,93 @@
   
     
     <entry>
-      <title>第一篇文章</title>
-      <link href="/2025/02/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2025/02/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      <title>Hexo 入门教程一</title>
+      <link href="/2025/02/12/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0%20/"/>
+      <url>/2025/02/12/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0%20/</url>
       
-        <content type="html"><![CDATA[<h2 id="我的第一篇文章"><a href="#我的第一篇文章" class="headerlink" title="我的第一篇文章"></a>我的第一篇文章</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><p><strong>Hexo</strong> 是一个基于 Node.js 的静态博客框架。它的特点包括：</p><hr>]]></content>
       
       
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 技术教程 </tag>
+            
+            <tag> 静态博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 入门教程二</title>
+      <link href="/2025/02/12/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0%20/"/>
+      <url>/2025/02/12/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0%20/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><p><strong>Hexo</strong> 是一个基于 Node.js 的静态博客框架。它的特点包括：</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 技术教程 </tag>
+            
+            <tag> 静态博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 入门使用说明</title>
+      <link href="/2025/02/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2025/02/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><p><strong>Hexo</strong> 是一个基于 Node.js 的静态博客框架。它的特点包括：</p><p>轻量：Hexo 的核心非常小巧，便于快速安装和运行，适合个人博客和技术博客。<br>快速：生成静态页面的速度极快，博客内容更新后能够迅速反映在网站上。<br>简洁：Hexo 的设置和使用简单直观，不需要复杂的配置，适合新手快速上手。<br>可扩展性：Hexo 支持大量插件，允许用户根据需求进行功能扩展，如搜索、评论、SEO 优化等。<br>主题定制：Hexo 提供丰富的主题库，可以根据自己的需求定制博客外观。<br>部署简单：由于是静态网站，Hexo 生成的博客可以方便地部署到 GitHub Pages、GitLab Pages、Netlify 等平台。<br>Hexo 生成的博客是静态的网页，这意味着所有的内容都在本地生成并上传到服务器，不需要数据库支持，因此部署起来非常高效且安全。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>安装 Hexo<br>使用 Hexo 前需要先安装 Node.js 和 Hexo，本节将详细介绍安装步骤。</p><h3 id="1-安装-Node-js"><a href="#1-安装-Node-js" class="headerlink" title="1. 安装 Node.js"></a>1. 安装 Node.js</h3><p>Hexo 基于 Node.js，因此需要先安装 Node.js。你可以通过以下步骤安装：</p><p>访问 Node.js 官网。<br>根据操作系统选择合适的版本（推荐下载 LTS 版本），点击下载并运行安装程序。<br>在安装完成后，打开终端（命令行）执行以下命令，检查是否成功安装：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>如果输出了 Node.js 和 npm 的版本号，说明安装成功。</p><h3 id="2-安装-Hexo"><a href="#2-安装-Hexo" class="headerlink" title="2. 安装 Hexo"></a>2. 安装 Hexo</h3><p>安装完成 Node.js 后，打开终端（命令行），执行以下命令安装 Hexo：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>这条命令会全局安装 Hexo 命令行工具，安装完成后，你可以使用 hexo 命令来管理你的博客</p><h3 id="3-创建-Hexo-博客"><a href="#3-创建-Hexo-博客" class="headerlink" title="3. 创建 Hexo 博客"></a>3. 创建 Hexo 博客</h3><p>安装完成 Hexo 后，可以使用以下命令创建一个新的博客：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure><p>这个命令将在当前目录下创建一个名为 myblog 的文件夹，并初始化 Hexo 项目，生成 Hexo 的默认文件和文件夹结构。</p><p>执行 hexo init 后，系统会自动下载所需的默认主题和插件，并创建一些必要的文件配置。</p><h3 id="4-安装依赖"><a href="#4-安装依赖" class="headerlink" title="4. 安装依赖"></a>4. 安装依赖</h3><p>进入 <code>myblog</code> 文件夹，执行以下命令安装所需的依赖：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>这条命令会根据项目中的 package.json 文件，下载并安装所有必要的依赖库。</p><p>安装完成后，你的 Hexo 博客已经准备好了！</p><h2 id="启动-Hexo-博客"><a href="#启动-Hexo-博客" class="headerlink" title="启动 Hexo 博客"></a>启动 Hexo 博客</h2><p>使用以下命令启动本地服务器并预览博客：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>默认情况下，Hexo 将会在 <code>http://localhost:4000</code> 启动一个本地服务器。你可以通过浏览器访问这个地址查看你的博客。如果看到默认的 Hexo 页面，说明博客已成功搭建。</p><h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>你在 Hexo 中，文章是以 Markdown 文件的形式保存的。你可以使用以下命令创建新文章：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;我的第一篇文章&quot;</span></span><br></pre></td></tr></table></figure><p>执行命令后，Hexo 会在 <code>source/_posts/</code> 目录下生成一个新的 Markdown 文件，文件名会自动加上时间戳。<br>接下来，你可以打开该 Markdown 文件，开始编辑你的文章内容。例如，打开 <code>source/_posts/</code>我的第一篇文章.md 文件，使用 Markdown 语法撰写内容。</p><h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><p>Hexo 支持多种部署方式，最常见的是将博客部署到 GitHub Pages 上。首先，需要在 GitHub 上创建一个新的仓库，然后在 Hexo 项目中配置部署设置。</p><h3 id="1-配置-config-yml"><a href="#1-配置-config-yml" class="headerlink" title="1. 配置 _config.yml"></a>1. 配置 <code>_config.yml</code></h3><p>打开 Hexo 项目的 <code>_config.yml</code> 配置文件，找到 <code>deploy</code> 部分，并配置你的 GitHub 仓库信息：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/yourusername/yourrepository.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><p>其中，<code>yourusername</code> 和 <code>yourrepository</code> 要替换成你自己的 GitHub 用户名和仓库名。如果你还没有创建仓库，可以先到 GitHub 上创建一个新的仓库。</p><h3 id="2-安装-Hexo-部署插件"><a href="#2-安装-Hexo-部署插件" class="headerlink" title="2. 安装 Hexo 部署插件"></a>2. 安装 Hexo 部署插件</h3><p>在终端中执行以下命令，安装 Hexo 部署插件   <code>hexo-deployer-git</code>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>这会将 <code>hexo-deployer-git</code> 插件添加到项目的依赖中，允许 Hexo 将内容部署到 GitHub Pages。</p><h3 id="3-部署到-GitHub-Pages"><a href="#3-部署到-GitHub-Pages" class="headerlink" title="3. 部署到 GitHub Pages"></a>3. 部署到 GitHub Pages</h3><p>最后，使用以下命令将博客部署到 GitHub Pages：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>命令执行完成后，Hexo 会自动将生成的静态页面推送到你的 GitHub 仓库的 <code>master</code> 分支下的 <code>gh-pages</code> 分支（如果配置正确）。</p><p>完成后，你可以通过访问 <code>https://yourusername.github.io/yourrepository</code> 查看你的 Hexo 博客。</p><h2 id="常见问题与解决方案"><a href="#常见问题与解决方案" class="headerlink" title="常见问题与解决方案"></a>常见问题与解决方案</h2><h3 id="1-部署失败"><a href="#1-部署失败" class="headerlink" title="1. 部署失败"></a>1. 部署失败</h3><p>确保在 GitHub 仓库中设置了正确的 <code>deploy</code> 配置。<br>检查网络连接，确认是否有访问 GitHub 的权限。<br>如果部署时遇到权限问题，可以尝试生成 SSH 密钥，并将公钥添加到 GitHub 的 SSH 设置中。</p><h3 id="2-主题问题"><a href="#2-主题问题" class="headerlink" title="2. 主题问题"></a>2. 主题问题</h3><p>Hexo 默认提供了一个简单的主题，但你可以通过 Hexo 的主题库选择自己喜欢的主题。下载并安装新主题后，只需要修改 <code>_config.yml</code> 中的 <code>theme</code> 配置项即可。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo 是一个非常适合技术博客的静态博客框架，它的轻便、快速和灵活性让搭建个人博客变得简单而高效。通过本文的介绍，你可以快速搭建起一个属于自己的 Hexo 博客，并开始撰写文章与分享内容。</p><p>更多关于 Hexo 的使用教程，请访问 [Hexo 官网] <code>https://hexo.io</code> 。</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 技术教程 </tag>
+            
+            <tag> 静态博客 </tag>
+            
+        </tags>
       
     </entry>
     
