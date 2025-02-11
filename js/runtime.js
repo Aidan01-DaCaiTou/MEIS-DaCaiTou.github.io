@@ -63,8 +63,8 @@
       const currentHour = now.getHours();
       const isWorkingTime = currentHour >= 9 && currentHour < 18;
       const imgSrc = isWorkingTime ?
-        "https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg" :
-        "https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg";
+        "https://blog-data-6y4.pages.dev/images/working.svg" :
+        "https://blog-data-6y4.pages.dev/images/offwork.svg";
       const imgTitle = isWorkingTime ?
         "什么时候能够实现财富自由呀~" :
         "下班了就该开开心心地玩耍~";
@@ -73,11 +73,13 @@
       // 4. 构造 HTML 内容
       // -------------------------------
       const html = `<img class='boardsign' src='${imgSrc}'><br>
-        <p>${imgTitle}</p>
-        <div>
-            本站已运行 ${days} 天 ${pad(hours)} 小时 ${pad(minutes)} 分 ${pad(seconds)} 秒 ❤️<br>
-            旅行者 1 号距离地球 ${currentDistance} 千米，约 ${distanceAU} AU 🚀
-        </div>`;
+          <p>${imgTitle}</p>
+          <div>
+            本站已运行 ${days} 天 ${pad(hours)} 小时 ${pad(minutes)} 分 ${pad(seconds)} 秒 
+            <span class="heartbeat">❤️</span><br>
+            旅行者 1 号距离地球 ${currentDistance} 千米，约 ${distanceAU} AU 
+            <span class="rocket">🚀</span>
+          </div>`;
       
       // -------------------------------
       // 5. 更新页面中的显示内容

@@ -7,12 +7,56 @@
     font-family: Arial, sans-serif; /* 设置字体 */
     line-height: 1.2;  /* 调小行间距，使文本更紧凑 */
     font-size: 12px;   /* 设置整体字体大小 */
-    background: rgba(255, 255, 255, 0.134); /* 轻微透明背景，使其与页面融合 */
-    padding: 5px; /* 设置内边距，避免内容紧贴边框 */
+    padding: 15px; /* 设置内边距，避免内容紧贴边框 */
     border-radius: 8px; /* 让边框变得圆润，美观 */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 轻微阴影，增加层次感 */
     display: inline-block; /* 让容器宽度适应内容大小 */
     margin: 5px auto; /* 控制外边距，使其居中 */
+    
+    background: rgba(255, 255, 255, 0.2); /* 半透明背景色 */
+    backdrop-filter: blur(10px); /* 实现雾玻璃效果，增加模糊 */
+    position: relative; /* 使得伪元素可以在该元素之上定位 */
+}
+
+#workboard::before {
+    content: ''; /* 创建一个伪元素 */
+    position: absolute; /* 绝对定位，使星空背景覆盖整个容器 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 50%); /* 创建星星的发光效果 */
+    opacity: 0.5;
+    z-index: -1; /* 将星空背景置于文本下面 */
+    animation: starryAnimation 5s infinite; /* 添加动画效果，让星星闪烁 */
+}
+
+/* 星星闪烁效果 */
+@keyframes starryAnimation {
+    0% { opacity: 0.3; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    75% { opacity: 0.5; }
+    100% { opacity: 0.3; }
+}
+
+/* 创建多个小星星 */
+#workboard::after {
+    content: ''; /* 创建伪元素 */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0) 20%) repeat;
+    pointer-events: none;
+    animation: moveStars 10s linear infinite;
+}
+
+/* 动态星空背景 */
+@keyframes moveStars {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
 }
 
 /* ===============================
@@ -41,11 +85,26 @@
    ❤️ 心跳动画（用于 fa-heartbeat）
    让 ❤️ 图标有心跳效果，增加趣味性
 ================================= */
-#workboard i.fa-heartbeat {
-    color: red; /* 让 ❤️ 变成红色 */
-    font-size: 12px; /* 让 ❤️ 稍微小一点，适应整体风格 */
-    animation: heartbeat 1.5s infinite; /* 设置心跳动画，每 1.5 秒循环 */
+.heartbeat {
+    display: inline-block; /* 让动画生效 */
+    animation: heartbeat 1.5s infinite;
 }
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); } /* 让 ❤️ 变大一点 */
+}
+
+.rocket {
+    display: inline-block;
+    animation: shake 0.2s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(1px); } /* 左右摆动 */
+}
+
 
 /* ===============================
    适配移动端
