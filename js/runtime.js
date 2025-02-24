@@ -63,8 +63,8 @@
       const currentHour = now.getHours();
       const isWorkingTime = currentHour >= 9 && currentHour < 18;
       const imgSrc = isWorkingTime ?
-        "https://blog-data-6y4.pages.dev/images/working.svg" :
-        "https://blog-data-6y4.pages.dev/images/offwork.svg";
+        "https://blog-data-6y4.pages.dev/图标/working.svg" :
+        "https://blog-data-6y4.pages.dev/图标/offwork.svg";
       const imgTitle = isWorkingTime ?
         "什么时候能够实现财富自由呀~" :
         "下班了就该开开心心地玩耍~";
